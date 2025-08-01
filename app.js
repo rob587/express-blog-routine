@@ -11,37 +11,37 @@ app.get('/', (req, res)=>{
 })
 
 // index
-app.get('/Torte', (req, res)=>{
-    res.send('elenco delle Torte')
+app.get('/posts', (req, res)=>{
+    res.send('elenco dei post')
 })
 
 // show
-app.get('/Torte/:id', (req, res)=>{
-    res.send(`dettaglio della torta con id: ${req.params.id}`)
+app.get('/posts/:id', (req, res)=>{
+    res.send(`dettaglio del post con id: ${req.params.id}`)
 })
 
 // create
 
-app.post('/Torte', (req,res)=>{
-    res.send('creazione della torta')
+app.post('/posts', (req,res)=>{
+    res.send('creazione del post')
 })
 
 // update
 
-app.put('/Torte/:id', (req,res)=>{
-    res.send(`modifica totale della torta con id: ${req.params.id} `)
+app.put('/posts/:id', (req,res)=>{
+    res.send(`modifica totale del post con id: ${req.params.id} `)
 })
 
 // patch
 
-app.patch('/Torte/:id',(req,res)=>{
-    res.send(`modifica parziale della torta con id ${req.params.id}`)
+app.patch('/posts/:id',(req,res)=>{
+    res.send(`modifica parziale del post con id ${req.params.id}`)
 })
 
 // delete
 
-app.delete('/Torte/:id', (req,res)=>{
-    res.send(`Cancella torta con id ${req.params.id}`)
+app.delete('/posts/:id', (req,res)=>{
+    res.send(`Cancella post con id ${req.params.id}`)
 })
 
 
